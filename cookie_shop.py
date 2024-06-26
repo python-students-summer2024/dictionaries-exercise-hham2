@@ -199,4 +199,4 @@ def run_shop(cookies):
     order = solicit_order(cookies)
     display_order_total(order, cookies)
 
-run_shop(bake_cookies("data/cookies.csv"))
+# run_shop(bake_cookies("data/cookies.csv"))
