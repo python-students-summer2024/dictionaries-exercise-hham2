@@ -179,7 +179,7 @@ def display_order_total(order, cookies):
         print("-{} {}".format(quantity, cookie_name))
         subtotal = quantity * cookie_type["price"]
         total += subtotal
-    print("Your total is ${:.2f}.\nPlease pay with Bitcoin before picking-up.\n\nThank you!\n-The Python Cookie Shop Robot.".format(total))
+    print("\n\nYour total is ${:.2f}.\nPlease pay with Bitcoin before picking-up.\n\nThank you!\n-The Python Cookie Shop Robot.".format(total))
 
 # display_order_total(solicit_order(bake_cookies("data/cookies.csv")), bake_cookies("data/cookies.csv"))
 
@@ -198,3 +198,5 @@ def run_shop(cookies):
     display_cookies(cookies)
     order = solicit_order(cookies)
     display_order_total(order, cookies)
+
+run_shop(bake_cookies("data/cookies.csv"))
